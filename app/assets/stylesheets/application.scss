@@ -105,6 +105,16 @@ form.button_to {
   }
 }
 
+.badge {
+  background-color: #fd3f52;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1rem;
+}
 .page-header {
   margin: 3em 0;
 }
