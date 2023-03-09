@@ -1,5 +1,19 @@
 <tr>
- 
+    <td>
+    <%= image_tag element.product.image.tiny.url %>
+  </td>
+  <td>
     <h4><%= element.product.name %></h4>
-    
+    <br>
+    <p><%= element.product.description %></p>
+  </td>
+  <td>
+    <%= humanized_money_with_symbol element.product.price %>
+  </td>
+  <td>
+    <%= element.quantity %>
+  </td>
+  <td>
+    <%= humanized_money_with_symbol element.product.price * element.quantity %>
+  </td>
 </tr>
