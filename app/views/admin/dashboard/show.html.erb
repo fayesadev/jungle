@@ -1,5 +1,24 @@
-<h1>Dashboard</h1>
-<p>Count of products:</p>
-<%= @products %>
-<p>Count of categories: </p>
-<%= @categories %>
+<section class="admin-products-index">
+
+  <header class="page-header">
+    <h1>Admin &raquo; Dashboard</h1>
+  </header>
+
+  <div class="panel panel-default products">
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Number of Products</th>
+          <th>Number of Categories</th>
+        </tr>
+      </thead>
+      <tbody>
+        <td><%= @products %></td>
+        <td><%= @categories %></td>
+      </tbody>
+    </table>
+
+  </div>
+
+</section>

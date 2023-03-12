@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   namespace :admin do
     root to: 'dashboard#show'
     resources :products, except: [:edit, :update, :show]
-    resources :categories, only: [:index, :create, :new]
+    resources :categories, except: [:edit, :update, :show]
   end
 
   get "about", to: "about#index"
