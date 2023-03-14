@@ -1,5 +1,9 @@
 {
   "screenshotsFolder": "tmp/cypress_screenshots",
   "videosFolder": "tmp/cypress_videos",
-  "trashAssetsBeforeRuns": false
+  "trashAssetsBeforeRuns": false,
+  "ignoreTestFiles": [
+    "**/1-getting-started/*.js",
+    "**/2-advanced-examples/*.js"
+]
 }
