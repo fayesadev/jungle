@@ -1,9 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
-end
-RSpec.describe User, type: :model do
   describe 'Validations' do
     # validation tests/examples here
     it "saves a new user when all fields are provided" do
@@ -43,4 +40,12 @@ RSpec.describe User, type: :model do
       )
       expect(@user).to_not be_valid
     end
+
+    it "doesn't save when password is nil" do
+      @user = User.new(password: nil)
+      expect(@user).to_not be_valid
+    end
+
+    
+  end
 end
