@@ -2,6 +2,10 @@
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
+## Final Product
+
+!["GIF of home page"](https://github.com/fayesadev/jungle/blob/master/docs/jungle.gif)
+
 ## Setup
 
 1. Run `bundle install` to install dependencies
